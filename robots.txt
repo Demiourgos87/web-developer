@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://demiourgos87.github.io/web-developer/sitemap.xml
+
