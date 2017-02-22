@@ -148,7 +148,7 @@ header {
 .backToTop:hover {
   background: rgba(50, 169, 219, 0.9); }
 
-@media only and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .service {
     margin-bottom: 15px; }
 
