@@ -166,7 +166,8 @@ header
           color: #ffffff
           display: flex
           align-items: center
-          transition: opacity .2s linear
+          transform: scale(0.2)
+          transition: all .2s linear
 
           i
             font-size: 2.6em
@@ -179,6 +180,7 @@ header
 
       figure:hover .overlay
         opacity: 1
+        transform: scale(1)
 
       .title, .intro, .description
         display: none
@@ -222,7 +224,7 @@ header
     opacity: 0.8
     cursor: pointer
     transition: opacity .15s linear
-    z-index: 1100
+    z-index: 1110
 
   .close:hover
     opacity: 1
@@ -234,6 +236,7 @@ header
     cursor: pointer
     font-size: 2.6em
     transition: opacity .15s linear
+    z-index: 1110
 
   .lbPrev
     top: 50%
@@ -269,3 +272,22 @@ header
 
   .lbBackground
     overflow-y: scroll
+
+    .close, .lbPrev, .lbNext
+      color: #232323
+      font-size: 1.6em
+
+    .lbPrev
+      left: 5px
+
+    .lbNext
+      right: 5px
+
+    .close
+      top: 5px
+      right: 5px
+
+    .lbForeground
+      width: 100%
+      margin: 0
+      padding: 20px 10px

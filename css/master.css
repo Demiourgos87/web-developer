@@ -137,7 +137,8 @@ header {
         color: #ffffff;
         display: flex;
         align-items: center;
-        transition: opacity 0.2s linear; }
+        transform: scale(0.2);
+        transition: all 0.2s linear; }
         #portfolio .row .col-md-4 figure .overlay i {
           font-size: 2.6em;
           margin: 0 auto; }
@@ -146,7 +147,8 @@ header {
         box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.4);
         border-radius: 4px; }
     #portfolio .row .col-md-4 figure:hover .overlay {
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1); }
     #portfolio .row .col-md-4 .title, #portfolio .row .col-md-4 .intro, #portfolio .row .col-md-4 .description {
       display: none; }
 
@@ -188,7 +190,7 @@ header {
     opacity: 0.8;
     cursor: pointer;
     transition: opacity 0.15s linear;
-    z-index: 1100; }
+    z-index: 1110; }
   .lbBackground .close:hover {
     opacity: 1; }
   .lbBackground .lbPrev, .lbBackground .lbNext {
@@ -197,7 +199,8 @@ header {
     opacity: 0.8;
     cursor: pointer;
     font-size: 2.6em;
-    transition: opacity 0.15s linear; }
+    transition: opacity 0.15s linear;
+    z-index: 1110; }
   .lbBackground .lbPrev {
     top: 50%;
     left: 20px; }
@@ -227,6 +230,20 @@ header {
     width: 100%; }
 
   .lbBackground {
-    overflow-y: scroll; } }
+    overflow-y: scroll; }
+    .lbBackground .close, .lbBackground .lbPrev, .lbBackground .lbNext {
+      color: #232323;
+      font-size: 1.6em; }
+    .lbBackground .lbPrev {
+      left: 5px; }
+    .lbBackground .lbNext {
+      right: 5px; }
+    .lbBackground .close {
+      top: 5px;
+      right: 5px; }
+    .lbBackground .lbForeground {
+      width: 100%;
+      margin: 0;
+      padding: 20px 10px; } }
 
 /*# sourceMappingURL=master.css.map */
