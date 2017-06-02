@@ -118,6 +118,8 @@ header {
 #portfolio {
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8); }
+  #portfolio .github {
+    padding: 40px; }
   #portfolio .row {
     margin: 60px 0 20px 0;
     padding-bottom: 20px; }
